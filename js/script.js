@@ -39,6 +39,10 @@ window.fbAsyncInit = function () {//facebook init
                         if (response.authResponse) {
                             window.location.reload();
                         }
+
+                    });
+                  }
+
  });
 
 
