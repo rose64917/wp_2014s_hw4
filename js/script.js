@@ -16,7 +16,7 @@ window.fbAsyncInit = function () {//facebook init
   	if (response.status === 'connected') {
     	//呼叫api把圖片放到#preview IMG tag 內
     		FB.api('/me/picture?type=normal', function(response) { // normal/large/squere 
-            var str="<img src="+ response.data.url +">";
+            var str="<img id = 'preview1' src="+ response.data.url +">";
             $('body').append(str);
           });
           
